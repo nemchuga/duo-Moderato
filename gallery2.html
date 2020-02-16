@@ -1,0 +1,105 @@
+<html>
+<head>
+<title>Duo Moderato - Dobrodosli</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/lightbox.css">
+<link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Quicksand&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/226c7253a4.js"></script>
+<script src = "js/jquery.js?v=2"></script>
+<script src = "js/lightbox-plus-jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <section class="grid">
+      <div class="header">
+        <i class="show-btn fas fa-bars"></i>
+        <i  id="zatvori" class="fas fa-times"></i>
+        <ul id="lista">
+          <li><a href="index.html">home</a></li>
+          <li><a href="news.html">news</a></li>
+          <li><a href="index.html#about-us">about us</a></li>
+          <li><a href="#work">gallery</a></li>
+          <li><a href="concerts.html">concerts</a></li>
+          <li><a href="video.html">video</a></li>
+          <li><a href="discography.html">discography</a></li>
+          <li><a href="art.html">art-gallery</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+
+        <div class="jezici">
+          <a href="">srp</a> |
+          <a href="">eng</a>
+        </div>
+        <h1 class="naslov">duo Moderato</h1>
+      </div>
+      </section>
+
+      <section class="gallery">
+        <h1>Gallery</h1>
+
+        <div class="gallery-cont">
+          <a href="images/gallery/img12.jpg" data-lightbox="mygallery"><img src="images/gallery/img12small.jpg" alt="12"></a>
+          <a href="images/gallery/img13.jpg" data-lightbox="mygallery"><img src="images/gallery/img13small.jpg" alt="1"></a>
+          <a href="images/gallery/img14.jpg" data-lightbox="mygallery"><img src="images/gallery/img14small.jpg" alt="2"></a>
+          <a href="images/gallery/img15.jpg" data-lightbox="mygallery"><img src="images/gallery/img15small.jpg" alt="3"></a>
+          <a href="images/gallery/img16.jpg" data-lightbox="mygallery"><img src="images/gallery/img16small.jpg" alt="4"></a>
+          <a href="images/gallery/img17.jpg" data-lightbox="mygallery"><img src="images/gallery/img17small.jpg" alt="5"></a>
+          <a href="images/gallery/img18.jpg" data-lightbox="mygallery"><img src="images/gallery/img18small.jpg" alt="6"></a>
+          <a href="images/gallery/img19.jpg" data-lightbox="mygallery"><img src="images/gallery/img19small.jpg" alt="7"></a>
+          <a href="images/gallery/img20.jpg" data-lightbox="mygallery"><img src="images/gallery/img20small.jpg" alt="8"></a>
+          <a href="images/gallery/img21.jpg" data-lightbox="mygallery"><img src="images/gallery/img21small.jpg" alt="8"></a>
+          <a href="images/gallery/img22.jpg" data-lightbox="mygallery"><img src="images/gallery/img22small.jpg" alt="8"></a>
+          <a href="images/gallery/img23.jpg" data-lightbox="mygallery"><img src="images/gallery/img23small.jpg" alt="8"></a>
+          <a href="images/gallery/img24.jpg" data-lightbox="mygallery"><img src="images/gallery/img24small.jpg" alt="8"></a>
+
+
+        </div>
+
+        <div class="traka">
+          <a href="gallery.html"><div class="broj">1</div></a>
+          <a href="#"><div class="broj" id="broj2">2</div></a>
+
+        </div>
+
+      </section>
+      </div>
+
+      <section class="footer">
+        <div class ="prava">
+          <p>duo Moderato, Nemanja Ilic 2019 - All rights reserved</p>
+        </div>
+        <div class="sitemap">
+          <p>duomoderato@gmail.com</p>
+        </div>
+        <div class="ikonice-foot">
+          <a class = "btn-foot" target="_blank" href="https://www.facebook.com/duomoderato/"><i class="fab fa-facebook-f"></i></a>
+          <a class = "btn-foot" target="_blank" href="https://www.youtube.com/user/duomoderato"><i class="fab fa-youtube"></i></a>
+        </div>
+      </section>
+
+<button id= "topbtn"><i class="fas fa-arrow-up"></i></button>
+      <script>
+        $('.show-btn').click(function(){
+          $('#lista').fadeToggle();
+          $(this).toggleClass('fa-times');
+        });
+        $(window).scroll(function(){
+          if($(this).scrollTop()>40){
+            $("#topbtn").fadeIn();
+          }
+          else{
+            $("#topbtn").fadeOut();
+          }
+
+        });
+        $("#topbtn").click(function(){
+          $('html, body').animate({scrollTop : 0}, 700);
+        });
+      </script>
+      <script src = "js/lightbox.js"></script>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+<html>
+<head>
+<title>Duo Moderato - Dobrodosli</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="css/artstyle1.css">
+<link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Quicksand&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/226c7253a4.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src = "js/jquery.js?v=6"></script>
+</head>
+
+<body>
+  <div class="container">
+    <section class="grid">
+      <div class="header">
+        <i class="show-btn fas fa-bars"></i>
+        <i  id="zatvori" class="fas fa-times"></i>
+        <ul id="lista">
+          <li><a href="index.html">home</a></li>
+          <li><a href="news.html">news</a></li>
+          <li><a href="index.html#about-us">about us</a></li>
+          <li><a href="gallery.html">gallery</a></li>
+          <li><a href="concerts.html">concerts</a></li>
+          <li><a href="video.html">video</a></li>
+          <li><a href="discography.html">discography</a></li>
+          <li><a href="art.html">art-gallery</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+
+        <h1 class="naslov"><img src="images/artimg/potpis.jpg" alt="">Milan Ignjatović</h1>
+      </div>
+      <div class="menu">
+        <ul class="artlist">
+          <li><a href="art_about_me.html">about me</a></li>
+          <!--<li><a href="">news</a></li>-->
+          <li><a href="images/artimg/cv.doc">cv</a></li>
+          <li><a href="exhibition.html">exhibition</a></li>
+          <!--<li><a href="">archive</a></li>-->
+          <!--<li><a href="">art shop</a></li>-->
+          <!--<li><a href="">contact</a></li>-->
+        </ul>
+      </div>
+      <div class="art-cont">
+        <div class="text">
+          <span>MILAN IGNJATOVIĆ</span> <br>
+          Painter, techer of art and composer, living and working in Zemun, (Belgrade).
+          Besides his working in a school and his painting, he is occupied by music as composer and guitarist.
+          He is a member of  ULUS, an Association of paint artists of Serbia and by now he has accomplished a great number of collective and individual expositions in his country, and has participated in some expositions abroad.
+          I emphasize the exposition of graphics in Galery of “Stara Kapetanija” 2000 named “Cut out reality” as well as participation at colony of fine arts “Široka staza” 2001, 2002 in Zemun.
+          At recent times he is more and more occupied by digital art – painting at the computer. For his collection of digital paintings he won the first prize at the festival “Art-teck” in Pančevo, 2002.
+          At the field of pedagogy, besides his working in a school, he is also the founder of DELIS – children festival of fine arts in Zemun.
+          He is presiding of active of fine arts pedagogues of Zemun.
+
+
+
+
+
+        </div>
+
+
+      </div>
+    </section>
+
+
+</div>
+<section class="footer">
+  <div class ="prava">
+    <p>duo Moderato, Nemanja Ilic 2019 - All rights reserved</p>
+  </div>
+  <div class="sitemap">
+    <p>duomoderato@gmail.com</p>
+  </div>
+  <div class="ikonice-foot">
+    <a class = "btn-foot" target="_blank" href="https://www.facebook.com/duomoderato/"><i class="fab fa-facebook-f"></i></a>
+    <a class = "btn-foot" target="_blank" href="https://www.youtube.com/user/duomoderato"><i class="fab fa-youtube"></i></a>
+  </div>
+</section>
+<button id= "topbtn"><i class="fas fa-arrow-up"></i></button>
+<script>
+  $('.show-btn').click(function(){
+    $('#lista').fadeToggle();
+    $(this).toggleClass('fa-times');
+  });
+  $(window).scroll(function(){
+    if($(this).scrollTop()>40){
+      $("#topbtn").fadeIn();
+    }
+    else{
+      $("#topbtn").fadeOut();
+    }
+
+  });
+  $("#topbtn").click(function(){
+    $('html, body').animate({scrollTop : 0}, 700);
+  });
+</script>
+</body>
+</html>

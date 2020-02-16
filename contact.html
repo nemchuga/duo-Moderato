@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>Duo Moderato - Dobrodosli</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Quicksand&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/226c7253a4.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src = "js/jquery.js?v=1"></script>
+</head>
+<body>
+  <div class="container">
+    <section class="grid">
+      <div class="header">
+        <i class="show-btn fas fa-bars"></i>
+        <i  id="zatvori" class="fas fa-times"></i>
+        <ul id="lista">
+          <li><a href="index.html">home</a></li>
+          <li><a href="news.html">news</a></li>
+          <li><a href="index.html#about-us">about us</a></li>
+          <li><a href="gallery.html">gallery</a></li>
+          <li><a href="concerts.html">concerts</a></li>
+          <li><a href="video.html">video</a></li>
+          <li><a href="discography.html">discography</a></li>
+          <li><a href="art.html">art-gallery</a></li>
+          <li><a href="#contact-us">contact</a></li>
+        </ul>
+
+        <div class="jezici">
+          <a href="">srp</a> |
+          <a href="">eng</a>
+        </div>
+        <h1 class="naslov">duo Moderato</h1>
+      </div>
+    </section>
+    <section class="contact-us">
+      <h1>Contact Us</h1>
+      <form action="send_form_email.php" class="contact-form" method="post">
+      <input type="text" class="contact-form-text" placeholder="Your name" name="name">
+      <input type="email" class="contact-form-text" placeholder="Your email" name="email">
+      <input type="text" class="contact-form-text" placeholder="Your phone" name="phone_number">
+      <textarea class="contact-form-text" placeholder="Your message" name="comments"></textarea>
+      <input type="submit" class="contact-form-btn" value="Send">
+      </form>
+    </section>
+</div>
+<section class="footer">
+  <div class ="prava">
+    <p>duo Moderato, Nemanja Ilic 2019 - All rights reserved</p>
+  </div>
+  <div class="sitemap">
+    <p>duomoderato@gmail.com</p>
+  </div>
+  <div class="ikonice-foot">
+    <a class = "btn-foot" target="_blank" href="https://www.facebook.com/duomoderato/"><i class="fab fa-facebook-f"></i></a>
+    <a class = "btn-foot" target="_blank" href="https://www.youtube.com/user/duomoderato"><i class="fab fa-youtube"></i></a>
+  </div>
+</section>
+<script>
+  $('.show-btn').click(function(){
+    $('#lista').fadeToggle();
+    $(this).toggleClass('fa-times');
+  });
+
+</script>
+</body>
+</html>

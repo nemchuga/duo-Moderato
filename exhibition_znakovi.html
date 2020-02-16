@@ -1,0 +1,101 @@
+<html>
+<head>
+<title>Duo Moderato - Dobrodosli</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="css/artstyle2.css">
+<link rel="stylesheet" href="css/lightbox.css">
+<link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Quicksand&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/226c7253a4.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src = "js/lightbox-plus-jquery.min.js"></script>
+<script src = "js/jquery.js?v=3"></script>
+</head>
+
+<body>
+  <div class="container">
+      <div class="header">
+        <i class="show-btn fas fa-bars"></i>
+        <i  id="zatvori" class="fas fa-times"></i>
+        <ul id="lista">
+          <li><a href="index.html">home</a></li>
+          <li><a href="news.html">news</a></li>
+          <li><a href="index.html#about-us">about us</a></li>
+          <li><a href="gallery.html">gallery</a></li>
+          <li><a href="concerts.html">concerts</a></li>
+          <li><a href="video.html">video</a></li>
+          <li><a href="discography.html">discography</a></li>
+          <li><a href="art.html">art-gallery</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+
+        <h1 class="naslov"><img src="images/artimg/potpis.jpg" alt="">Milan Ignjatović</h1>
+      </div>
+      <div class="menu">
+        <ul class="artlist">
+          <li><a href="art_about_me.html">about me</a></li>
+          <!--<li><a href="">news</a></li>-->
+          <li><a href="images/artimg/cv.doc">cv</a></li>
+          <li><a href="exhibition.html">exhibition</a></li>
+          <!--<li><a href="">archive</a></li>-->
+          <!--<li><a href="">art shop</a></li>-->
+          <!--<li><a href="">contact</a></li>-->
+        </ul>
+      </div>
+
+      <section class="gallery">
+        <h1>Znakovi</h1>
+        <a href="images/artimg/znakovi/Grafički-znak.doc"><p>Autor o izložbi</p></a>
+        <div class="lightbox_cont">
+          <a href="images/artimg/znakovi/K1.jpg" data-lightbox="light"><img src="images/artimg/znakovi/K1small.jpg" alt="k1"></a>
+          <a href="images/artimg/znakovi/K3.jpg" data-lightbox="light"><img src="images/artimg/znakovi/K3small.jpg" alt="k3"></a>
+          <a href="images/artimg/znakovi/K4.jpg" data-lightbox="light"><img src="images/artimg/znakovi/K4small.jpg" alt="k4"></a>
+          <a href="images/artimg/znakovi/K8.jpg" data-lightbox="light"><img src="images/artimg/znakovi/K8small.jpg" alt="k8"></a>
+          <a href="images/artimg/znakovi/K9.jpg" data-lightbox="light"><img src="images/artimg/znakovi/K9small.jpg" alt="k9"></a>
+          <a href="images/artimg/znakovi/K10.jpg" data-lightbox="light"><img src="images/artimg/znakovi/K10small.jpg" alt="k10"></a>
+          <a href="images/artimg/znakovi/1.jpg" data-lightbox="light"><img src="images/artimg/znakovi/1small.jpg" alt="1"></a>
+          <a href="images/artimg/znakovi/2.jpg" data-lightbox="light"><img src="images/artimg/znakovi/2small.jpg" alt="2"></a>
+          <a href="images/artimg/znakovi/3.jpg" data-lightbox="light"><img src="images/artimg/znakovi/3small.jpg" alt="3"></a>
+          <a href="images/artimg/znakovi/4.jpg" data-lightbox="light"><img src="images/artimg/znakovi/4small.jpg" alt="4"></a>
+          <a href="images/artimg/znakovi/5.jpg" data-lightbox="light"><img src="images/artimg/znakovi/5small.jpg" alt="5"></a>
+        </div>
+      </section>
+
+  </div>
+
+<section class="footer">
+  <div class ="prava">
+    <p>duo Moderato, Nemanja Ilic 2019 - All rights reserved</p>
+  </div>
+  <div class="sitemap">
+    <p>duomoderato@gmail.com</p>
+  </div>
+  <div class="ikonice-foot">
+    <a class = "btn-foot" target="_blank" href="https://www.facebook.com/duomoderato/"><i class="fab fa-facebook-f"></i></a>
+    <a class = "btn-foot" target="_blank" href="https://www.youtube.com/user/duomoderato"><i class="fab fa-youtube"></i></a>
+  </div>
+</section>
+<button id= "topbtn"><i class="fas fa-arrow-up"></i></button>
+<script>
+  $('.show-btn').click(function(){
+    $('#lista').fadeToggle();
+    $(this).toggleClass('fa-times');
+  });
+  $(window).scroll(function(){
+    if($(this).scrollTop()>40){
+      $("#topbtn").fadeIn();
+    }
+    else{
+      $("#topbtn").fadeOut();
+    }
+
+  });
+  $("#topbtn").click(function(){
+    $('html, body').animate({scrollTop : 0}, 700);
+  });
+</script>
+<script src = "js/lightbox.js"></script>
+</body>
+</html>
